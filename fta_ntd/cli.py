@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 """
-Basic CLI Template
+FTA NTD ETL
 
 Example usage:
-    poetry run template-cli version
+    poetry run fta-ntd version
 
 """
 import click
