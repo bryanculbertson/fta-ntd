@@ -253,14 +253,14 @@ After setting up system environment with `pyenv` and `poetry`, then you can inst
 1. Test your installation!
 
     ```sh
-    poetry run fta-ntd--help
+    poetry run fta-ntd --help
     ```
 
     *or*
 
     ```sh
     eval $(poetry env activate)
-    fta-ntd--help
+    fta-ntd --help
     ```
 
 ### Testing
