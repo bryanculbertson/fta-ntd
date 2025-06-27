@@ -1,0 +1,48 @@
+[project]
+name = "template-cli"
+version = "0.1.0"
+description = "Basic template for python project"
+authors = [
+    {name = "Bryan Culbertson", email = "bryan.culbertson@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dynamic = ["dependencies"]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+click = "8.2.1"
+python-dotenv = "1.1.1"
+
+[tool.poetry.group.dev.dependencies]
+# Lint (versions duplicated in .pre-commit-config.yaml)
+black = "25.1.0"
+flake8 = "7.3.0"
+isort = "6.0.1"
+mypy = "1.16.1"
+pre-commit = "4.2.0"
+
+# Test
+tox = "4.27.0"
+pytest = "8.4.1"
+pytest-cov = "6.2.1"
+pytest-mock = "3.14.1"
+pytest-xdist = {version = "3.7.0", extras = ["psutil"]}
+pytest-randomly = "3.16.0"
+
+[project.scripts]
+template-cli = "template_cli.cli:cli"
+
+[build-system]
+requires = ["poetry-core>=2.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ['py313']
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+
+[tool.coverage.report]
+show_missing = true
