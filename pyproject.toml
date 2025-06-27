@@ -1,7 +1,7 @@
 [project]
-name = "template-cli"
+name = "fta-ntd"
 version = "0.1.0"
-description = "Basic template for python project"
+description = "ETL for FTA's The National Transit Database (NTD)"
 authors = [
     {name = "Bryan Culbertson", email = "bryan.culbertson@gmail.com"}
 ]
@@ -31,7 +31,7 @@ pytest-xdist = {version = "3.7.0", extras = ["psutil"]}
 pytest-randomly = "3.16.0"
 
 [project.scripts]
-template-cli = "template_cli.cli:cli"
+fta-ntd = "fta_ntd.cli:cli"
 
 [build-system]
 requires = ["poetry-core>=2.0"]

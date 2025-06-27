@@ -1,4 +1,4 @@
-# python-template
+# fta-ntd
 
 ## Usage
 
@@ -9,7 +9,7 @@ Before using the project, either install it by following instructions in [Instal
 - Output project version
 
     ```python
-    template-cli version
+    fta-ntd version
     ```
 
 ## Installation
@@ -19,13 +19,13 @@ If not developing, then no need to clone this repo. You can use [pipx](https://g
 1. Install the project:
 
     ```sh
-    pipx install git+https://github.com/bryanculbertson/python-template
+    pipx install git+https://github.com/bryanculbertson/fta-ntd
     ```
 
 1. Test your installation!
 
     ```sh
-    template-cli --help
+    fta-ntd --help
     ```
 
 ## Development
@@ -253,14 +253,14 @@ After setting up system environment with `pyenv` and `poetry`, then you can inst
 1. Test your installation!
 
     ```sh
-    poetry run template-cli --help
+    poetry run fta-ntd--help
     ```
 
     *or*
 
     ```sh
     eval $(poetry env activate)
-    template-cli --help
+    fta-ntd--help
     ```
 
 ### Testing
